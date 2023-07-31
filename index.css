@@ -1,0 +1,74 @@
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgb(121 32 153 / 74%) 86%
+  );
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background-attachment: fixed;
+}
+
+#signup {
+  width: 27%;
+  margin: 10vh auto 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #792099;
+  text-transform: capitalize;
+}
+
+#button {
+  background-color: #792099;
+  color: #fff;
+  border: 1px solid #792099;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-field input {
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #00ffff;
+}
+
+.form-field input:focus {
+  outline: 0;
+}
+
+:root {
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
+}
+
+.form-field.error input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+
+
+.form-field small {
+  color: var(--error-color);
+}
